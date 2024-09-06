@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/result.css">
+    <title>Result - Coffee Leaf Disease Detection</title>
+</head>
+<body>
+    <div class="buttons-container">
+        <a href="/" class="button">Home</a>
+    </div>
+    <div class ="container">
+    <h1>Result - Coffee Leaf Disease Detection</h1>
+
+    {% if file_path %}
+        <h2 class="predicted">Uploaded Image:</h2>
+        <img src="{{ file_path }}" alt="Uploaded Image" style="max-width: 400px;">
+        
+        {% if predicted_class %}
+            <h2 class="predicted">Predicted Disease:</h2>
+            <p class="predicted_class">{{ predicted_class }}</p>
+        {% endif %}
+    {% else %}
+        <p>No result available.</p>
+    {% endif %}
+</div>
+</body>
+</html>

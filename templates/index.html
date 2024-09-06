@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <title>Coffee Leaf Disease Detection</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Coffee Leaf Disease Detection</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="file">Upload Coffee Leaf Image:</label>
+            <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png" required>
+            <br>
+            <button type="submit">Detect Disease</button>
+        </form>
+    </div>
+
+    <div class="buttons-container">
+        <a href="/about" class="button">About</a>
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+
+            // Handle form submission logic here
+            var fileInput = document.getElementById('file-input');
+            if (fileInput.files.length > 0) {
+                var file = fileInput.files[0];
+                // You can add further processing or send the file to a backend for disease detection here
+                console.log('File selected:', file.name);
+            } else {
+                console.log('Please choose a file.');
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/leaf14.jpg'); /* Adjust the path to your image */
+    background-repeat: no-repeat;
+    background-position: center calc(50% - 50px); /* Adjust the value based on your image height */
+    background-size: cover;
+  }
+  
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .buttons-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  .buttons-container .button {
+    background-color: rgb(234, 234, 130);
+    color:black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Add margin between buttons */
+  }
+  
+  /* Change background color on hover to indicate interactivity */
+  .buttons-container .button:hover {
+    background-color: rgb(11, 66, 184);
+  }
+  
+  /* Container */
+  .containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7));
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    animation: fadeInUp 1s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.7); /* Set transparent black background color */
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .disease-container {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Set background color */
+    border-radius: 8px;
+  
+  }
+  
+  /* Heading */
+  .containers h1 {
+    color: rgb(244, 117, 117);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph */
+  .containers p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* List */
+  .containers ul {
+    list-style-type: none;
+    margin-left: 20px;
+    color: #555;
+  }
+  
+  .containers ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Links */
+  .containers a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .containers a:hover {
+    text-decoration: underline;
+  }
+  

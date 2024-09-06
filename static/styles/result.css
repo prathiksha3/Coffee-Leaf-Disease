@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('images/leaf1.webp') center/cover no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: gradientAnimation 10s infinite alternate;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background: url('images/leaf14.jpg') center/cover no-repeat;
+    }
+    25% {
+      background: url('images/leaf18.jpeg') center/cover no-repeat;
+    }
+    50% {
+      background: url('images/leaf15.avif') center/cover no-repeat;
+    }
+    75% {
+      background: url('images/leaf13.webp') center/cover no-repeat;
+    }
+    100% {
+      background: url('images/leaf9.jpg') center/cover no-repeat;
+    }
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7));
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    animation: fadeInUp 1s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.7); /* Set transparent black background color */
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    color: #f2f0ee; /* Example of a different heading color */
+    font-size: 2.5rem;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  /* Style the file input with transition */
+  input[type="file"] {
+    display: none;
+    transition: outline 0.3s ease; /* Add transition to outline property */
+  }
+  
+  label {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition to background color */
+  }
+  
+  #file-input {
+    display: none;
+  }
+  
+  /* Style the button with opacity and transition */
+  button {
+    background-color: rgba(88, 140, 244, 0.7); /* Adjust the alpha (fourth) value for transparency */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition to background color */
+  }
+  
+  /* Change background color on hover to indicate interactivity */
+  button:hover {
+    background-color: rgb(11, 66, 184); /* Adjust the alpha value for hover state */
+  }
+  
+  #file-input + label {
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Add transition to background color */
+  }
+  
+  #file-input + label {
+    background-color: #af5e4c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #file-input:focus + label {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+  }
+  .predicted{
+    color: white;
+  }
+  .predicted_class{
+    color: white;
+  }
+  .buttons-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .buttons-container .button {
+    background-color: rgb(234, 234, 130);
+    color:black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Add margin between buttons */
+  }
+  
+  /* Change background color on hover to indicate interactivity */
+  .buttons-container .button:hover {
+    background-color: rgb(11, 66, 184);
+  }
